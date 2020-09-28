@@ -14,6 +14,7 @@ class ProductAdapter(private val productList: ArrayList<Product>) : RecyclerView
         val imageView : ImageView = itemView.imageView
         val nameView : TextView = itemView.product_name_text
         val priceView : TextView = itemView.product_price_text
+        val weightView : TextView = itemView.weight_text
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ProductViewHolder {
@@ -26,6 +27,7 @@ class ProductAdapter(private val productList: ArrayList<Product>) : RecyclerView
         holder.imageView.setImageResource(currentItem.imageResource)
         holder.nameView.text = currentItem.productName
         holder.priceView.text = currentItem.productPrice.toString()
+        holder.weightView.text = currentItem.productWeight.toString()
     }
 
     override fun getItemCount(): Int = productList.size

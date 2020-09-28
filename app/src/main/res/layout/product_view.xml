@@ -23,8 +23,8 @@
                 android:id="@+id/imageView"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                tools:srcCompat="@drawable/rice"
-                android:scaleType="centerCrop"/>
+                android:scaleType="centerCrop"
+                tools:srcCompat="@drawable/rice" />
         </androidx.cardview.widget.CardView>
 
         <TextView
@@ -41,7 +41,7 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/product_price_text"
+            android:id="@+id/product_price_text1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/product_name_text"
@@ -54,11 +54,12 @@
             android:textSize="12sp" />
 
         <TextView
+            android:id="@+id/product_price_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/product_name_text"
             android:layout_marginTop="8dp"
-            android:layout_toEndOf="@+id/product_price_text"
+            android:layout_toEndOf="@+id/product_price_text1"
             android:fontFamily="monospace"
             android:text="12.00"
             android:textColor="@android:color/black"
@@ -87,7 +88,16 @@
                 android:layout_marginStart="8dp"
                 android:layout_marginEnd="8dp"
                 android:fontFamily="monospace"
-                android:text="3 kg"
+                android:text="3"
+                android:textColor="@android:color/black"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/weight_text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="monospace"
+                android:text="Kg"
                 android:textColor="@android:color/black"
                 android:textStyle="bold" />
 

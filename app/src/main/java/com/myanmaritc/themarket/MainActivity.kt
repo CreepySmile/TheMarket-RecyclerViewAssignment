@@ -11,9 +11,9 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val productList = ArrayList<Product>()
-        productList.add(Product(R.drawable.sugar,"Fine Grain Sugar", 30.0))
-        productList.add(Product(R.drawable.peanuts,"Peanuts", 60.0))
-        productList.add(Product(R.drawable.rice,"Fine Grain Sugar", 120.0))
+        productList.add(Product(R.drawable.sugar,"Fine Grain Sugar", 30.0,50))
+        productList.add(Product(R.drawable.peanuts,"Peanuts", 60.0,25))
+        productList.add(Product(R.drawable.rice,"Rice", 120.0,175))
 
         recycler_view.adapter = ProductAdapter(productList)
         recycler_view.layoutManager = LinearLayoutManager(this)
